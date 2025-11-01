@@ -21,13 +21,12 @@ Aplicação web para leitura de códigos de barras e QR codes utilizando a câme
 
 ### Código de Barras
 <p align="center">
-  <img alt="Leitura de código de barras" title="Código de Barras" src=".github/barcode1.gif" width="240">
-  <img alt="Leitura de código de barras" title="Código de Barras" src=".github/barcode2.gif" width="240">
+  <img alt="Leitura de código de barras" title="Código de Barras" src="/src/codebar.gif" width="240">
 </p>
 
 ### QR Code
 <p align="center">
-  <img alt="Leitura de QR code" title="QR Code" src=".github/qrcode.gif" width="240">
+  <img alt="Leitura de QR code" title="QR Code" src="/src/qrcode.gif"" width="240">
 </p>
 
 ## 🛠️ Tecnologias

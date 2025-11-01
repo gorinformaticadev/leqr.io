@@ -328,17 +328,71 @@ export function Home() {
             )}
 
             {/* Footer */}
-            <Typography
-              variant="caption"
-              color="text.secondary"
-              sx={{
-                mt: 4,
-                display: "block",
-                opacity: 0.7
-              }}
-            >
-              Desenvolvido pela GOR Informática
-            </Typography>
+            <Card elevation={1} sx={{ mt: 4, maxWidth: 500, mx: 'auto' }}>
+              <CardContent sx={{ py: 3, textAlign: 'center' }}>
+                <Typography 
+                  variant="body2" 
+                  color="text.primary" 
+                  sx={{ fontWeight: 600, mb: 1 }}
+                >
+                  Desenvolvido por GOR Informática © {new Date().getFullYear()}
+                </Typography>
+                
+                <Stack 
+                  direction={isMobile ? "column" : "row"} 
+                  spacing={isMobile ? 1 : 3} 
+                  justifyContent="center" 
+                  alignItems="center"
+                  sx={{ mt: 2 }}
+                >
+                  <Stack direction="row" alignItems="center" spacing={1}>
+                    <Typography variant="body2" color="text.secondary">
+                      📱 WhatsApp:
+                    </Typography>
+                    <Typography 
+                      variant="body2" 
+                      color="primary.main"
+                      component="a"
+                      href="https://wa.me/556133597358"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{ 
+                        textDecoration: 'none',
+                        fontWeight: 500,
+                        '&:hover': {
+                          textDecoration: 'underline'
+                        }
+                      }}
+                    >
+                      (61) 3359-7358
+                    </Typography>
+                  </Stack>
+                  
+                  <Stack direction="row" alignItems="center" spacing={1}>
+                    <Typography variant="body2" color="text.secondary">
+                      🌐 Site:
+                    </Typography>
+                    <Typography 
+                      variant="body2" 
+                      color="primary.main"
+                      component="a"
+                      href="https://gorinformatica.com.br"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{ 
+                        textDecoration: 'none',
+                        fontWeight: 500,
+                        '&:hover': {
+                          textDecoration: 'underline'
+                        }
+                      }}
+                    >
+                      gorinformatica.com.br
+                    </Typography>
+                  </Stack>
+                </Stack>
+              </CardContent>
+            </Card>
           </Box>
         </Fade>
       </Container>

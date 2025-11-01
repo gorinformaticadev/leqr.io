@@ -1,10 +1,15 @@
-import { StyledEngineProvider } from "@mui/styled-engine";
+import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
+import { CssBaseline } from "@mui/material";
+import { theme } from "./theme";
 import { Home } from "./components/Home";
 
 function App() {
   return (
     <StyledEngineProvider injectFirst>
-      <Home />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Home />
+      </ThemeProvider>
     </StyledEngineProvider>
   );
 }
